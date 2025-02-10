@@ -1,3 +1,9 @@
+//M2Lab1
+//Blackman, James
+//09 Feb 25
+//Box dimension calculator
+
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -9,7 +15,7 @@ int main()
     double length, width, height, volume, cost, charge, profit;
 
     cout << setprecision(2) << fixed << showpoint;
-    
+    //cout << "Welcome to Blackman's Boxes! Where we take care of all your box needs." << endl; 
     cout << "Enter the dimensions of the crate (in feet):\n";
     cout << "Length: ";
     cin >> length;
