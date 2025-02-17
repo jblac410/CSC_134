@@ -13,13 +13,13 @@ int main() {
     
     string school = "FTCC!";
     string team = "Trojans!";
-    string chant ="Let's go"
+    string chant ="Let's go ";
 
     // Output cheering messages using variables
     cout << chant << school << endl;
-    cout <<chant << school << endl;
     cout << chant << school << endl;
-    cout << chant << team << endl;
+    cout << chant << school << endl;
+    cout << chant + team << endl;
 
     return 0;
 }
