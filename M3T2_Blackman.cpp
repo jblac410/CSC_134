@@ -10,7 +10,8 @@
 using namespace std;
 
 
-int main() {
+int main() 
+{
 
     // Variables
     double len1, wid1, len2, wid2; 
@@ -43,15 +44,12 @@ int main() {
     else if (area1 < area2) 
     {
         cout << "Rectangle two is larger than rectangle one." << endl;
-
-    
+ 
     }
+    
     else  (area1 == area2)
     {
         cout << "Rectangle area one and two are equal" << endl;
     }
-    
-
-
-    return 0;
+        return 0;
 }
