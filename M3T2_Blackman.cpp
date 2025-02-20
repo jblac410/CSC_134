@@ -35,23 +35,23 @@ int main() {
     // Print the area
     
     if (area1 > area2)
-    
+    {
     
         cout << "Rectangle one is larger than rectangle two." << endl;
 
-    
+    }
     else if (area1 < area2) 
-    
+    {
         cout << "Rectangle two is larger than rectangle one." << endl;
 
     
-    
+    }
     else  (area1 == area2)
-    
+    {
         cout << "Rectangle area one and two are equal" << endl;
-        
+    }
     
-}
+
 
     return 0;
 }
