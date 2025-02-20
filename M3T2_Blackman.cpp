@@ -47,7 +47,7 @@ int main()
  
     }
     
-    else  (area1 == area2)
+    else if  (area1 == area2)
     {
         cout << "Rectangle area one and two are equal" << endl;
     }
