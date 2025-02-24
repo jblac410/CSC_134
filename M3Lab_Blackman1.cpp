@@ -30,7 +30,7 @@ int main()
 
   // ask the question
   cout << "Welcome to the Chooser or Loser!" << endl;
-  cout << "The only game show that gives the contenstants the choice of winning a thing or losing a thing! (probably)" << endl;
+  cout << "The only game show that gives the contenstants the choice of winning a thing or losing a thing! probably" << endl;
   cout << "You have four choices to choose from: you can open Door 1, stick your hand in Jar 2," << endl;
   cout << " fall in to hole 3, or maybe the best option, leave this place! " << endl;
   cout << "All you have to do is choose what mystery uncover by typing 1, 2, 3, or 4: " << endl; 
@@ -82,7 +82,7 @@ void chooseDoor2()
 {
  
   cout << "You chose to stick you hand in a jar" << endl;
-  cout << "You win ... A SILLY ANT! (how silly is up to your interpretation of normal vs silly ant behavior)." << endl;
+  cout << "You win ... A SILLY ANT! How silly is up to your interpretation of normal vs silly ant behavior." << endl;
 }
 void chooseDoor3() 
 {
