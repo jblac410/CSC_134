@@ -58,7 +58,7 @@ string letter_grade;
         }
         
  
-std::cout << "Play again? (y/n): ";
+std::cout << "Input another grade? (y/n): ";
         std::cin >> run_again;
    } while (run_again == "y");
 
