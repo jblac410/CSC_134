@@ -17,7 +17,7 @@ string letter_grade;
         cout<< "Number grade to letter grade conversion program." << endl;
         cout<< "Enter the number grade: ";
         cin >> num_grade;
-        if (num_grade <= 0 || num_grade >101)
+        if (num_grade <= 0 || num_grade >=100)
         {
         cout << "Invalid Grade, please input again. ";
         
