@@ -12,7 +12,7 @@ using namespace std;
 int main()
 {
     while (count <= 5) 
-    {
+    
         cout << "Done" << endl;
         const int MIN_NUM =1
         const int MAX_NUM = 10;
@@ -29,6 +29,6 @@ int main()
                 num = num + 1;
 
                 }
-    }
+    
 return 0;    
 }
