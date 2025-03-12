@@ -27,8 +27,8 @@ int main()
     } else {
         cout << "If you're not sure... that's OK." << endl;
     }
-
-
+    cout<< "" << endl;
+    cout<< "" << endl;
     cout<< "Qestion 2" << endl;
     cout<< "" << endl;
     string store_name = "Blackman BBQ";
@@ -68,7 +68,7 @@ int main()
    
    
     
-    cout << setprecision(2) << fixed;
+    //cout << setprecision(2) << fixed;
     cout << "YOUR RECEIPT" << endl;
     cout << "-------------------------" << endl;
     cout << "Subtotal:\t $" << mealPrice << endl;
@@ -78,7 +78,7 @@ int main()
     cout << "Have a nice day!" << endl;
     cout << endl; 
    
-
+    cout<< "" << endl;
     cout<< "Question 3" << endl;
     cout<< "" << endl;
     cout << "You are in a dark cave. Do you go left or right?" << endl;
@@ -101,7 +101,7 @@ int main()
     {
         cout << "You fall into a pit. Game over!" << endl;
     }
-
+    cout<< "" << endl;
     cout<< "Question 4" <<endl;
     cout<< "" <<endl;
     srand(time(0)); // Seed random number generator
