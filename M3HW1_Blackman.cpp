@@ -30,6 +30,7 @@ int main()
 
 
     cout<< "Qestion 2" << endl;
+    cout<< "" << endl;
     string store_name = "Blackman BBQ";
   
     cout << "Welcome to " << store_name << endl;
@@ -102,7 +103,7 @@ int main()
     }
 
     cout<< "Question 4" <<endl;
-
+    cout<< "" <<endl;
     srand(time(0)); // Seed random number generator
     int num1 = rand() % 10; // 0-9
     int num2 = rand() % 10;
@@ -117,5 +118,6 @@ int main()
     } else {
         cout << "Incorrect." << endl;
     }
+    
     return 0;
 }
