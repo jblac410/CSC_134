@@ -72,7 +72,8 @@ int main()
     cout << "YOUR RECEIPT" << endl;
     cout << "-------------------------" << endl;
     cout << "Subtotal:\t $" << mealPrice << endl;
-    cout << "Tax:\t\t $" << taxRate << endl;
+    cout << "Tax:\t\t $" << tax << endl;
+    cout << "Tip:\t\t $" <<tip << endl;
     cout << "-------------------------" << endl;
     cout << "Total:\t\t $" << total << endl;
     cout << "Have a nice day!" << endl;
