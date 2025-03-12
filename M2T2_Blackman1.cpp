@@ -17,32 +17,47 @@ int main()
  
  
  string store_name = "Blackman BBQ";
- string food_item = "Brisket";
- double food_price = 5.99; //dollas
-
- 
- 
- 
+  
  cout << "Welcome to " << store_name << endl;
- cout << "You have chosen " << food_item << " that will be $" << food_price << endl;
- cout << endl;
-  cout << endl;
+ 
+  cout << endl; 
   cout << endl;
   cout << endl; 
- double subtotal, total; 
- subtotal = food_price;
+  double mealPrice, taxRate = 0.08, tipRate = 0.15;
+  int orderType; 
+
+  cout << "Enter price of the meal: $";
+  cin >> mealPrice;
+
+  cout << "Please enter 1 if the order is dine in, 2 if it is to go: ";
+  cin >> orderType;
+
+  double tax = mealPrice * taxRate;
+  double tip = 0;
+
+  if (orderType == 1) 
+  {
+      tip = mealPrice * tipRate;
+  }
+
+  double total = mealPrice + tax + tip;
+
+  cout << fixed << setprecision(2); // decimals
+  cout << "Meal: $" << mealPrice << endl;
+  cout << "Tax: $" << tax << endl;
+  if (tip > 0) {
+      cout << "Tip: $" << tip << endl;
+  }
+  cout << "Total: $" << total << endl;
   
 
 
- double tax_percent = .08;
- double tax_cost = tax_percent * subtotal;
- total = subtotal + tax_cost;
  
  cout << setprecision(2) << fixed;
  cout << "YOUR RECEIPT" << endl;
  cout << "-------------------------" << endl;
- cout << "Subtotal:\t $" << subtotal << endl;
- cout << "Tax:\t\t $" << tax_cost << endl;
+ cout << "Subtotal:\t $" << mealPrice << endl;
+ cout << "Tax:\t\t $" << taxRate << endl;
  cout << "-------------------------" << endl;
  cout << "Total:\t\t $" << total << endl;
  cout << "Have a nice day!" << endl;
