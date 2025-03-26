@@ -21,17 +21,19 @@ int double_a_number(int number);
 int main() {
     cout << "Lets colab!" << endl;
     int number;
-    cin >> number;
-    int square_1 = square (square_1);
-    cout << "The square of " << square_1  << std::endl;
+    
+    int square_1 = square (number);
+    cout << "The squares of 1-10 are: " << square_1  << std::endl;
 
 
 }
 
-int square(int number);
+int square(int number)
 {
 
-int square_1; 
+int square_1 = 1
+do (square_1 ++ <= 10) {
 square_1 = number * number;
+}
 return square_1; 
 }
