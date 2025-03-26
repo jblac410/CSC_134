@@ -19,21 +19,22 @@ void printAnswerLine();
 int double_a_number(int number);
 
 int main() {
-    cout << "Lets colab!" << endl;
-    int number;
+   
     
     int square_1 = square (number);
-    cout << "The squares of 1-10 are: " << square_1  << std::endl;
+    cout << "The squares of 1-10 are: " << endl;
 
 
 }
 
 int square(int number)
 {
+for 
+ 
+    (int square_1 = 1; square_1 <= 10; ++square_1) 
+    {
+        int square = square_1 * square_1;
 
-int square_1 = 1
-do (square_1 ++ <= 10) {
-square_1 = number * number;
-}
-return square_1; 
+    }
+return square; 
 }
