@@ -22,7 +22,7 @@ int main() {
    
     
     int square_1 = square (number);
-    cout << "The squares of 1-10 are: " << endl;
+    cout << "The squares of 1-10 are: " << square_1 << endl;
 
 
 }
@@ -36,5 +36,5 @@ for
         int square = square_1 * square_1;
 
     }
-return square; 
+return number; 
 }
