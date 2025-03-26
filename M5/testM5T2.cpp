@@ -1,10 +1,3 @@
-// CSC 134
-// M5T2
-// Blackman, James
-// 26 March 25
-
-// create 1 void function and 1 value returning funtion
-
 #include <iostream> 
 #include <cmath>
 using namespace std;
@@ -19,22 +12,19 @@ void printAnswerLine();
 int double_a_number(int number);
 
 int main() {
-   
+    int square_1;
     
-    
-    cout << "The squares of 1-10 are: "  << endl;
     for 
-    (int num = 1; num <= 10; ++num) 
+ 
+    (int square_1 = 1; square_1 <= 10; ++square_1) 
     {
-        int square = square(num);
-        
-        cout << num << "\t" << square << endl;
+        int square = square_1 * square_1;
+
     }
+    cout << "The squares of 1-10 are: " << square << endl;
 
-}
 
-int square(int num)
-{
-    int square = num * num;
-    return square; 
+
+
+
 }
