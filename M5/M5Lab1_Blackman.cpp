@@ -21,22 +21,22 @@ void choice_go_home();
 // TODO: add more choices here
 
 int main() {
-  cout << "M5LAB1 - Choose Your Own Adventure" << endl;
+  cout << "Welcome to the ISS." << endl;
   // load up the main menu
   main_menu();
   // when we return here, we're done
-  cout << "Thanks for playing!" << endl;
+  cout << "You go back to sleep, and wake up dead from hypoxia!" << endl;
   return 0; // finished with no errors
 }
 
 void main_menu() {
   // Write a simple menu that lets the user choose 1,2, or 3, or 4 to quit.
   cout << "Main Menu" << endl;
-  cout << "You're in front of a spooky old house..." << endl;
+  cout << "You start awake in your sleeping pod to a blaring alarm and flashing red lights." << endl;
   cout << "Do you:" << endl;
-  cout << "1. Try the front door" << endl;
-  cout << "2. Sneak around back" << endl;
-  cout << "3. Forget it, and go home" << endl;
+  cout << "1. Go to the console and see why the alarm is on. " << endl;
+  cout << "2. Call Houston to see if they are tracking the leak. " << endl;
+  cout << "3. Silence alarms and go back to sleep. " << endl;
   cout << "4. [Quit]" << endl;
   cout << "Choose: ";
   int choice;
@@ -62,11 +62,11 @@ void main_menu() {
 // now we have to actually write the functions.
 // They go here, after main().
 void choice_front_door() {
-  cout << "Try the front door." << endl;
-  cout << "It's locked. " << endl;
+  cout << "The console says \'HULL BREACH IN SCIENCE POD 1.'" << endl;
+  cout << "Atmosphere is venting at 20 percent 02 every minute, you have 3 minutes before all oxygen is vented. " << endl;
   cout << "Do you:" << endl;
-  cout << "1. Check around back" << endl;
-  cout << "2. Give up and go home" << endl;
+  cout << "1. Waste time to get into a pressure suit." << endl;
+  cout << "2. Head to science pod to check the leak out in your sleep suit. " << endl;
   int choice;
   cout << "Choose: ";
   cin >> choice;
@@ -77,8 +77,24 @@ void choice_front_door() {
   }
 }
 
-void choice_back_door() { cout << "TODO: Write something here" << endl; }
+void choice_back_door() { cout << "You get your suit on and head to science pod 1" << endl; 
 
-void choice_go_home() { cout << "TODO: Write something here" << endl; }
+  
+  cout << "You see the leak and grab the emergency seal kit.'" << endl;
+  
+  cout << "Do you:" << endl;
+  cout << "1. Seal the hull and call Houston." << endl;
+  cout << "2. Seal the hull and go back to sleep " << endl;
+  int choice;
+  cout << "Choose: ";
+  cin >> choice;
+  if (1 == choice) {
+    choice_back_door();
+  } else if (2 == choice) {
+    choice_go_home();
+  }
+}
+
+void choice_go_home() { cout << "You died of hypoxia because you did not put on your pressure suit" << endl; }
 
 // any new choices go here
