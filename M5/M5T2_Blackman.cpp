@@ -7,6 +7,7 @@
 
 #include <iostream> 
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 // declare void functions
@@ -18,7 +19,8 @@ int square(int number);
 void printAnswerLine(int num, int num_squared);
 int double_a_number(int number);
 
-int main() {
+int main() 
+{
    
     
     
@@ -27,25 +29,26 @@ int main() {
     {
         int squared_value = square(num);
         
-        cout << num << "\t" << square << endl;
+       
         printAnswerLine(num, squared_value);
-
     }
+    
     return 0;
-
 }
 
-int square(int num)
-{
-    int result = num * num;
-    return result; 
-}
-void printAnswerline(int num ,int num_squared)
-{
 
-    cout << num << "\t" << num_squared << endl;
-}
-int double_a_number(int number)
-{
-    return number * 2;
-}
+int square (int num)
+        {
+            int result = num * num;
+            return result; 
+        }
+            void printAnswerline(int num ,int num_squared)
+            {
+
+                cout << num << "\t" << num_squared << endl;
+            }
+                int double_a_number(int number)
+                { 
+                    return number * 2;
+                }   
+        
