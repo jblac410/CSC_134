@@ -15,7 +15,7 @@ using namespace std;
 // This is so the compiler knows to save
 // room for them in the final program.
 void main_menu();
-void choice_front_door();
+void choice_pressure_suit();
 void choice_back_door();
 void choice_go_home();
 // TODO: add more choices here
@@ -25,7 +25,7 @@ int main() {
   // load up the main menu
   main_menu();
   // when we return here, we're done
-  cout << "You go back to sleep, and wake up dead from hypoxia!" << endl;
+  cout << "Did you make the right choice?" << endl;
   return 0; // finished with no errors
 }
 
@@ -42,11 +42,11 @@ void main_menu() {
   int choice;
   cin >> choice;
   if (1 == choice) {
-    choice_front_door();
+   choice_pressure_suit();
   } else if (2 == choice) {
-    // call choice 2 here
+     choice_back_door();// call choice 2 here
   } else if (3 == choice) {
-    // call choice 3 here
+     choice_go_home();// call choice 3 here
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -61,7 +61,7 @@ void main_menu() {
 // OK, we have the prototypes at the top, but
 // now we have to actually write the functions.
 // They go here, after main().
-void choice_front_door() {
+void choice_pressure_suit() {
   cout << "The console says \'HULL BREACH IN SCIENCE POD 1.'" << endl;
   cout << "Atmosphere is venting at 20 percent 02 every minute, you have 3 minutes before all oxygen is vented. " << endl;
   cout << "Do you:" << endl;
@@ -93,8 +93,27 @@ void choice_back_door() { cout << "You get your suit on and head to science pod 
   } else if (2 == choice) {
     choice_go_home();
   }
+return;
 }
 
-void choice_go_home() { cout << "You died of hypoxia because you did not put on your pressure suit" << endl; }
+void choice_go_home() { cout << "You died of hypoxia because you did not put on your pressure suit" << endl; 
+   cout << "" << endl; 
+
+  
+    cout << ".'" << endl;
+    
+    cout << "Do you:" << endl;
+    cout << "1. ." << endl;
+    cout << "2.  " << endl;
+    int choice;
+    cout << "Choose: ";
+    cin >> choice;
+    if (1 == choice) {
+      choice_back_door();
+    } else if (2 == choice) {
+      choice_go_home();
+    }
+  }
+  
 
 // any new choices go here
