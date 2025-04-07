@@ -9,6 +9,7 @@ using namespace std;
 double getLength();
 double getWidth();
 double getArea(double length, double width);
+void displayData (double length, double width, double area);
 
 // Declare (Write the prototypes for)
 // the getLength,
@@ -50,6 +51,7 @@ double getWidth()
 {
 double userWidth;
 cout << "Enter the rectangle's width: ";
+cin>> userWidth;
 return userWidth;
 }
 
