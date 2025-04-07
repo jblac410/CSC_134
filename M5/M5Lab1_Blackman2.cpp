@@ -56,9 +56,9 @@ void main_menu() {
   if (1 == choice) {
     choice_front_door();
   } else if (2 == choice) {
-    // call choice 2 here
+    choice_back_door();// call choice 2 here
   } else if (3 == choice) {
-    // call choice 3 here
+    choice_go_home();// call choice 3 here
   } else if (4 == choice) {
     cout << "Ok, quitting game" << endl;
     return; // go back to main()
@@ -89,8 +89,18 @@ void choice_front_door() {
   }
 }
 
-void choice_back_door() { cout << "The back door leads to stairs that go down into the abyss." << endl; }
+void choice_back_door() 
+{ cout << "You sneak around to the back door." << endl; 
+ cout << "The back door looks even older than the front, and you can't get it open. " << endl; 
+cout << "You decide to head home and read a book instead." << endl; 
+}
 
-void choice_go_home() { cout << "TODO: Write something here" << endl; }
+void choice_go_home() 
+{ 
+    cout << "You decide this spooky house isn't worth the trouble." << endl;
+    cout << "You turn around and walk home." << endl;
+    cout << "Maybe you'll read a book instead." << endl;
+    cout << "THE END." << endl;
+}
 
 // any new choices go here
