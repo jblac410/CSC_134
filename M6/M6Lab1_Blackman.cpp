@@ -4,14 +4,15 @@
 //M6 Lab 1
 // replicate the best parts of buckshot roulette
 using namespace std;
-
+#include <vector>
+#include <iostream>
 int main() {
     // Your code here
     const int RED = 1;
     const int BLACK = 2;
     const int EMPTY = 0;
 
-    int magazine [] = {RED, BLACK, BLACK, RED};
+    int magazine [] = {RED, BLACK, BLACK, BLACK};
     for (int shell : magazine) {
         string shellname;
         if (shell == BLACK) {
@@ -23,5 +24,21 @@ int main() {
         }
         cout << "Next shell " << shellname << endl;
     }
-    return 0;
+    
+vector<int> mag;
+//load mag
+mag.push_back(BLACK);
+mag.push_back(RED);
+
+int num_shells - 2;
+int current_shell = mag.at(num_shells - 1);
+cout << "Next shell " << current_shell << endl;
+mag.pop_back();
+num_shells--;
+current_shell = mag.at(num_shells - 1);
+cout << "Next shell " << current_shell << endl;
+mag.pop_back();
+cout << "Mag contains " << mag.size() << " shells" << endl;
+cout<< "It could hold up to" <<mag.capacity() << " before resizing." << endl;
+return 0;
 }
