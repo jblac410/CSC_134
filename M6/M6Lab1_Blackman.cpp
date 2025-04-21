@@ -27,10 +27,11 @@ int main() {
     
 vector<int> mag;
 //load mag
-mag.push_back(BLACK);
 mag.push_back(RED);
-
-int num_shells - 2;
+mag.push_back(BLACK);
+mag.push_back(BLACK);
+mag.push_back(BLACK);
+int num_shells = 2;
 int current_shell = mag.at(num_shells - 1);
 cout << "Next shell " << current_shell << endl;
 mag.pop_back();
@@ -39,6 +40,6 @@ current_shell = mag.at(num_shells - 1);
 cout << "Next shell " << current_shell << endl;
 mag.pop_back();
 cout << "Mag contains " << mag.size() << " shells" << endl;
-cout<< "It could hold up to" <<mag.capacity() << " before resizing." << endl;
+cout<< "It could hold up to " <<mag.capacity() << " before resizing." << endl;
 return 0;
 }
